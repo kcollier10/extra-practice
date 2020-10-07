@@ -11,7 +11,8 @@
 //
 //     Objective: Write a script to generate and output the first 25 narcissistic integers.
 
+// n represents sum
+// m represents number of digits
+// (sum of m) raised to power of m = n
 
-here is an update to this file
 
-here is a second update
