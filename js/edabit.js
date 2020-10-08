@@ -131,6 +131,25 @@ function countWords(str) {
 }
 
 
+function footballPoints(wins, draws, losses) {
+    return (wins * 3) + (draws);
+}
+
+// Create a function that takes three arguments prob, prize, pay and returns true if prob * prize > pay; otherwise return false.
+
+function profitableGamble(prob, prize, pay) {
+    if (prob * prize > pay) {
+        return true;
+    }
+    return false;
+}
+
+// The farmer has counted his animals and he gives you a subtotal for each species. You have to implement a function that returns the total number of legs of all the animals.
+
+function animals(chickens, cows, pigs) {
+    return (chickens * 2) + (cows * 4) + (pigs * 4);
+}
+
 
 
 
