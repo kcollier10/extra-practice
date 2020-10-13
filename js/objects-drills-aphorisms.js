@@ -257,17 +257,21 @@ console.log(aphorisms);
 
 //TODO:How long is this array?
 
+console.log(aphorisms.length);
+
 //61
 
 //TODO: Assign the first quote/author object to the variable firstQuote. Log the quote from the variable. Log the author from the variable.
 
 var firstQuote = aphorisms[0];
+console.log(firstQuote);
 console.log(firstQuote.quote);
 console.log(firstQuote.author);
 
 //TODO: Assign the last quote/author object to the variable lastQuote. Log the quote from the variable. Log the author from the variable.
 
  var lastQuote = aphorisms[aphorisms.length - 1];
+ console.log(lastQuote);
 console.log(lastQuote.quote);
 console.log(lastQuote.author);
 
@@ -300,16 +304,18 @@ console.log(fifthQuote.quote + " -" + fifthQuote.author);
 *Example Output: What’s the one thing you can do, such that by doing it, everything else will be easier or unnecessary? -Gary Keller"
 **/
 
-function formatQuote(quote, author) {
+function formatQuote(aphorismObject) {
 	aphorisms.forEach(function(aphorism) {
-		console.log('"quote": ' + aphorism.quote);
-		console.log('"author": ' + aphorism.author);
-	})
+		console.log('"quote": ' + aphorismObject.quote);
+		console.log('"author": ' + aphorismObject.author);
+	});
+	console.log(formatQuote());;
 }
 
-formatQuote();
 
 //TODO: Write a function named getRandomQuote, that accepts the aphorisms array, and returns a string that contains a random quote and author in the format "quote" + "-author".
+
+function getRandomQuote ()
 
 //TODO: Write a function named fiveRandomQuotes, that accepts the aphorisms array and returns an array of five random quotes and authors in the format "quote" + "-author".
 
